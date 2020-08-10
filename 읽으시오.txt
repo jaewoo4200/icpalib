@@ -1,0 +1,13 @@
+pip install mysqlclient
+설치 안될 시 파이썬 3 64bit로 다운받아야 함
+
+MySQL설치하고
+
+root 유저 비번 어드민과 동일
+
+lib_books 데이터베이스 폴더는 MySQL설치 후 위치경로로 잘라서 붙여넣기
+--->
+C:\ProgramData\MySQL\MySQL Server 8.0\Data\
+
+서버 실행 할때는 manage.py가 존재하는 폴더에서 cmd를 연 후
+python manage.py runserver 0.0.0.0:80

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>메인</title>
+	</head>
+	<body>
+		<h1>ICPA 도서관</h1>
+		<form action="/search" method="GET">
+			책 제목 검색: <input type="search" name='b_title'>
+			<input type="submit" value="검색">
+		</form>
+		<hr>
+		<h3>현재 책 목록</h3>
+		{% for book in books %}
+			<p1>{{ book.name }}</p1>
+			<p1>{{ book.regi_id }}</p1>
+			<p1>{{ book.call_id }}</p1>
+			<p1>{{ book.status }}</p1>
+			<hr>
+		{% endfor %}
+	</body>
